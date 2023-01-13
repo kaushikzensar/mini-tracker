@@ -32,7 +32,7 @@ class TrackingSave implements ObserverInterface
         $this->_curl->addHeader("Content-Length",200);
         $response = $this->_curl->getBody();
         $result = $this->_json->unserialize($response);
-		if($result['code']) {
+		if(isset($result['code']) || $result['code']!='') {
 			$trackingModel = $this->_trackingFactory->create();
 			$trackingModel->setSku($_product->getSku());
 			$trackingModel->setTrackingCode($result['code']);
