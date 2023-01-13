@@ -1,0 +1,22 @@
+{
+    "name": "loop/module-tracking",
+    "description": "Tracking Management By Agentur LOOP New Media GmbH",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Kaushik Pitroda",
+            "email": "kaushik.montu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Loop\\Tracking\\": ""
+        }
+    }
+}
